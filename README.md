@@ -10,12 +10,13 @@ The data for this model is available on [Kaggle](https://www.kaggle.com/ankitver
 * Preprocessed the data to be able to apply a machine learning model
 * Studied more than 10 classification algorithms, from simple models like Logistic Regression to ensemble methods like Random Forest or XGBoosting as well as combinations of models using Voting classifiers and Stacking classifiers
 * Optimised the hyperparameters from the best performing models using 10-fold cross validation
-* Created a pipeline able to preprocess and predict on new data
-* Achieved high performance on test data such as:
+* Combined the finetuned models using a Voting Classifier and a Stacking Classifier
+* Created a pipeline able to preprocess and predict on new data using a pickled model
+* Achieved high performance on test data using the Voting Classifier on finetuned models:
 
 | Best Model       |  Accuracy   | Precision   |  Recall    | 
 | :--------------: | :---------: | :--------:  | :--------: | 
-| XGBClassifier    |  0.981      |  0.971      |  0.914     |
+| Voting Classifer |  0.981      |  0.971      |  0.914     |
 
 <br><br>
 
