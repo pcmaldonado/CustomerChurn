@@ -15,7 +15,7 @@ The data for this model is available on [Kaggle](https://www.kaggle.com/ankitver
 
 | Best Model       |  Accuracy   | Precision   |  Recall    | 
 | :--------------: | :---------: | :--------:  | :--------: | 
-| XGBClassifier    |  0.00       |  0.00       |  0.00      |
+| XGBClassifier    |  0.981      |  0.971      |  0.914     |
 
 <br><br>
 
