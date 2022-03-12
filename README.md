@@ -3,21 +3,56 @@ The data for this model is available on [Kaggle](https://www.kaggle.com/ankitver
 
 ### Use of:
 * **Python** Version 3.9.7
-* **Packages:** numpy, pandas, matplotlib, sklearn, picle, feature_engine, xgboost, missingno 
+* **Packages:** numpy, pandas, matplotlib, sklearn, pickle, feature_engine, xgboost, missingno, smote, lime 
 
 # Overview
-* Analysed the data (distributions, type of data, missing values) and studied the relationship between the features and the average churn rate of an e-commerce
-* Preprocessed the data to be able to apply a machine learning model
-* Studied more than 10 classification algorithms, from simple models like Logistic Regression to ensemble methods like Random Forest or XGBoosting as well as combinations of models using Voting classifiers and Stacking classifiers
-* Optimised the hyperparameters from the best performing models using 10-fold cross validation
-* Combined the finetuned models using a Voting Classifier and a Stacking Classifier
-* Created a pipeline able to preprocess and predict on new data using a pickled model
-* Achieved high performance on test data using the Voting Classifier on finetuned models:
 
-| Best Model       |  Accuracy   | Precision   |  Recall    | 
-| :--------------: | :---------: | :--------:  | :--------: | 
-| Voting Classifer |  0.981      |  0.971      |  0.914     |
+## Main Results
+<ul>
+	<li>When <strong>tenure</strong> is low, there have been <strong>complains</strong> and people are <strong>single</strong>, they are highly likely to churn </li>
+	<li>Some <strong>city tiers</strong> are also more likely to churn than others</li>
+	<li>People who mostly buy from the <strong>Laptop & Accessory</strong> category are less likely to churn</li>
+</ul>
 
+The company should try to better focus on single people, study why certain categories are associated with a higher risk of churn,
+as well as see why certain city tiers are more susceptible to churn. In addition, understanding where complaints are coming from could also be helpful.
+
+By adressing these factors, it is probably that churn would decrease.</p>
+
+<br>
+
+## Walkthrough
+<ul>
+	<li>Analysed the data (distributions, type of data, missing values) and studied the relationship between the features and the average churn rate of the e-commerce</li>
+	<li>Preprocessed the data to be able to apply a machine learning model</li>
+	<li>Used SMOTE to handle imbalanced data</li>
+	<li>Studied more than 10 classification algorithms, from simple models like Logistic Regression to ensemble methods like Random Forest or XGBoosting as well as combinations of models using Voting classifiers and Stacking classifiers</li>
+	<li>Optimised the hyperparameters from the best performing models using 10-fold cross validation</li>
+	<li>Combined the finetuned models using a Voting Classifier and a Stacking Classifier</li>
+	<li>Created a pipeline able to preprocess and predict on new data using a pickled model</li>
+	<li>Achieved higher performance on test data using the Voting Classifier on finetuned models, than using the best individual model:</li>
+		<table>
+			<tr>
+				<th>Model</th>
+				<th>Accuracy</th>
+				<th>Precision</th>
+				<th>Recall</th>
+			</tr>
+			<tr>
+				<td>Voting Classifier (best model)</td>
+				<td>98.13%</td>
+				<td>97.13%</td>
+				<td>91.35%</td>
+			</tr>
+			<tr>
+			  <td>Extra Trees Classifier <br>(best individual model)</td>
+			  <td>96.63%</td>
+			  <td>96.82%</td>
+			  <td>82.16%</td>
+		  </tr>
+		</table>
+	<li>Used LIME to interpret results</li>
+</ul>
 <br><br>
 
 
