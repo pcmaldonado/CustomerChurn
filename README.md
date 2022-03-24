@@ -40,8 +40,8 @@ By adressing these factors, it is probably that churn would decrease.</p>
 			</tr>
 			<tr>
 				<td>Voting Classifier (best model)</td>
-				<td>98.13%</td>
-				<td>97.13%</td>
+				<td>97.96%</td>
+				<td>96.02%</td>
 				<td>91.35%</td>
 			</tr>
 			<tr>
