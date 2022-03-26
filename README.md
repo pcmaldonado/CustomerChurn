@@ -1,5 +1,5 @@
 # Predicting Customer Churn 
-The data for this model is available on [Kaggle](https://www.kaggle.com/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction) and contains data on genre, tenure, preferred payment mode, and more for over 5,600 customers of an e-commerce company.
+The data for this model is available on [Kaggle](https://www.kaggle.com/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction) under the ["CC BY-NC-SA 4.0"](https://creativecommons.org/licenses/by-nc-sa/4.0/) License, and contains data on genre, tenure, preferred payment mode, and more for over 5,600 customers of an e-commerce company.
 
 ### Use of:
 * **Python** Version 3.9.7
